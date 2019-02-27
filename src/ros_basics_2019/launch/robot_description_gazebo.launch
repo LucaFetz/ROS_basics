@@ -1,0 +1,15 @@
+<launch>
+	<param name="robot_description" command="$(find xacro)/xacro '$(find ros_basics_2019)/urdf/robot_description.urdf.xacro'"/>
+	<arg name="x" default="0"/>
+	<arg name="y" default="0"/>
+	<arg name="z" default="1.1"/>
+
+	<!-- Start Gazebo with an empty world loaded -->
+	<include file="$(find gazebo_ros)/launch/empty_world.launch">
+		<arg name="paused" default="true"/>
+	</include>
+
+	<!-- Spawn your robot model -->
+	<node name="mybot_spawn" pkg="gazebo_ros" type="spawn_model" output ="screen" 
+	args="-urdf -param robot_description -model BOBBY -x $(arg x) -y $(arg y) -z $(arg z)" />
+</launch>
