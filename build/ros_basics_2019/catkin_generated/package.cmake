@@ -1,6 +1,6 @@
 set(_CATKIN_CURRENT_PACKAGE "ros_basics_2019")
 set(ros_basics_2019_VERSION "0.0.0")
-set(ros_basics_2019_MAINTAINER "luca <luca@todo.todo>")
+set(ros_basics_2019_MAINTAINER "luca fetz <luca.fetz@epfl.ch>, stefania konstantinidi <stefania.konstantinidi@epfl.ch>, sepand feyz <sepand.feyz@epfl.ch>")
 set(ros_basics_2019_PACKAGE_FORMAT "2")
 set(ros_basics_2019_BUILD_DEPENDS "roscpp" "rospy")
 set(ros_basics_2019_BUILD_EXPORT_DEPENDS "roscpp" "rospy")

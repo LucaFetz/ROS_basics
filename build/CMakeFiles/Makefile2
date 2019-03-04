@@ -408,11 +408,13 @@ clean: gtest/googlemock/gtest/CMakeFiles/gtest.dir/clean
 # Directory level rules for directory ros_basics_2019
 
 # Convenience name for "all" pass in the directory.
-ros_basics_2019/all:
+ros_basics_2019/all: ros_basics_2019/CMakeFiles/ros_basics_2019_waypoint.dir/all
+ros_basics_2019/all: ros_basics_2019/CMakeFiles/ros_basics_2019_node.dir/all
 
 .PHONY : ros_basics_2019/all
 
 # Convenience name for "clean" pass in the directory.
+ros_basics_2019/clean: ros_basics_2019/CMakeFiles/ros_basics_2019_waypoint.dir/clean
 ros_basics_2019/clean: ros_basics_2019/CMakeFiles/roscpp_generate_messages_py.dir/clean
 ros_basics_2019/clean: ros_basics_2019/CMakeFiles/roscpp_generate_messages_eus.dir/clean
 ros_basics_2019/clean: ros_basics_2019/CMakeFiles/roscpp_generate_messages_lisp.dir/clean
@@ -428,6 +430,7 @@ ros_basics_2019/clean: ros_basics_2019/CMakeFiles/std_msgs_generate_messages_eus
 ros_basics_2019/clean: ros_basics_2019/CMakeFiles/std_msgs_generate_messages_nodejs.dir/clean
 ros_basics_2019/clean: ros_basics_2019/CMakeFiles/roscpp_generate_messages_nodejs.dir/clean
 ros_basics_2019/clean: ros_basics_2019/CMakeFiles/std_msgs_generate_messages_py.dir/clean
+ros_basics_2019/clean: ros_basics_2019/CMakeFiles/ros_basics_2019_node.dir/clean
 
 .PHONY : ros_basics_2019/clean
 
@@ -435,6 +438,57 @@ ros_basics_2019/clean: ros_basics_2019/CMakeFiles/std_msgs_generate_messages_py.
 ros_basics_2019/preinstall:
 
 .PHONY : ros_basics_2019/preinstall
+
+#=============================================================================
+# Target rules for target ros_basics_2019/CMakeFiles/ros_basics_2019_waypoint.dir
+
+# All Build rule for target.
+ros_basics_2019/CMakeFiles/ros_basics_2019_waypoint.dir/all: ros_basics_2019/CMakeFiles/roscpp_generate_messages_py.dir/all
+ros_basics_2019/CMakeFiles/ros_basics_2019_waypoint.dir/all: ros_basics_2019/CMakeFiles/roscpp_generate_messages_eus.dir/all
+ros_basics_2019/CMakeFiles/ros_basics_2019_waypoint.dir/all: ros_basics_2019/CMakeFiles/roscpp_generate_messages_lisp.dir/all
+ros_basics_2019/CMakeFiles/ros_basics_2019_waypoint.dir/all: ros_basics_2019/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/all
+ros_basics_2019/CMakeFiles/ros_basics_2019_waypoint.dir/all: ros_basics_2019/CMakeFiles/std_msgs_generate_messages_lisp.dir/all
+ros_basics_2019/CMakeFiles/ros_basics_2019_waypoint.dir/all: ros_basics_2019/CMakeFiles/roscpp_generate_messages_cpp.dir/all
+ros_basics_2019/CMakeFiles/ros_basics_2019_waypoint.dir/all: ros_basics_2019/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/all
+ros_basics_2019/CMakeFiles/ros_basics_2019_waypoint.dir/all: ros_basics_2019/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/all
+ros_basics_2019/CMakeFiles/ros_basics_2019_waypoint.dir/all: ros_basics_2019/CMakeFiles/std_msgs_generate_messages_cpp.dir/all
+ros_basics_2019/CMakeFiles/ros_basics_2019_waypoint.dir/all: ros_basics_2019/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/all
+ros_basics_2019/CMakeFiles/ros_basics_2019_waypoint.dir/all: ros_basics_2019/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/all
+ros_basics_2019/CMakeFiles/ros_basics_2019_waypoint.dir/all: ros_basics_2019/CMakeFiles/std_msgs_generate_messages_eus.dir/all
+ros_basics_2019/CMakeFiles/ros_basics_2019_waypoint.dir/all: ros_basics_2019/CMakeFiles/std_msgs_generate_messages_nodejs.dir/all
+ros_basics_2019/CMakeFiles/ros_basics_2019_waypoint.dir/all: ros_basics_2019/CMakeFiles/roscpp_generate_messages_nodejs.dir/all
+ros_basics_2019/CMakeFiles/ros_basics_2019_waypoint.dir/all: ros_basics_2019/CMakeFiles/std_msgs_generate_messages_py.dir/all
+	$(MAKE) -f ros_basics_2019/CMakeFiles/ros_basics_2019_waypoint.dir/build.make ros_basics_2019/CMakeFiles/ros_basics_2019_waypoint.dir/depend
+	$(MAKE) -f ros_basics_2019/CMakeFiles/ros_basics_2019_waypoint.dir/build.make ros_basics_2019/CMakeFiles/ros_basics_2019_waypoint.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/luca/ros_practicals_ws/build/CMakeFiles --progress-num=14,15 "Built target ros_basics_2019_waypoint"
+.PHONY : ros_basics_2019/CMakeFiles/ros_basics_2019_waypoint.dir/all
+
+# Include target in all.
+all: ros_basics_2019/CMakeFiles/ros_basics_2019_waypoint.dir/all
+
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+ros_basics_2019/CMakeFiles/ros_basics_2019_waypoint.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/luca/ros_practicals_ws/build/CMakeFiles 2
+	$(MAKE) -f CMakeFiles/Makefile2 ros_basics_2019/CMakeFiles/ros_basics_2019_waypoint.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/luca/ros_practicals_ws/build/CMakeFiles 0
+.PHONY : ros_basics_2019/CMakeFiles/ros_basics_2019_waypoint.dir/rule
+
+# Convenience name for target.
+ros_basics_2019_waypoint: ros_basics_2019/CMakeFiles/ros_basics_2019_waypoint.dir/rule
+
+.PHONY : ros_basics_2019_waypoint
+
+# clean rule for target.
+ros_basics_2019/CMakeFiles/ros_basics_2019_waypoint.dir/clean:
+	$(MAKE) -f ros_basics_2019/CMakeFiles/ros_basics_2019_waypoint.dir/build.make ros_basics_2019/CMakeFiles/ros_basics_2019_waypoint.dir/clean
+.PHONY : ros_basics_2019/CMakeFiles/ros_basics_2019_waypoint.dir/clean
+
+# clean rule for target.
+clean: ros_basics_2019/CMakeFiles/ros_basics_2019_waypoint.dir/clean
+
+.PHONY : clean
 
 #=============================================================================
 # Target rules for target ros_basics_2019/CMakeFiles/roscpp_generate_messages_py.dir
@@ -913,6 +967,57 @@ ros_basics_2019/CMakeFiles/std_msgs_generate_messages_py.dir/clean:
 
 # clean rule for target.
 clean: ros_basics_2019/CMakeFiles/std_msgs_generate_messages_py.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
+# Target rules for target ros_basics_2019/CMakeFiles/ros_basics_2019_node.dir
+
+# All Build rule for target.
+ros_basics_2019/CMakeFiles/ros_basics_2019_node.dir/all: ros_basics_2019/CMakeFiles/roscpp_generate_messages_py.dir/all
+ros_basics_2019/CMakeFiles/ros_basics_2019_node.dir/all: ros_basics_2019/CMakeFiles/roscpp_generate_messages_eus.dir/all
+ros_basics_2019/CMakeFiles/ros_basics_2019_node.dir/all: ros_basics_2019/CMakeFiles/roscpp_generate_messages_lisp.dir/all
+ros_basics_2019/CMakeFiles/ros_basics_2019_node.dir/all: ros_basics_2019/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/all
+ros_basics_2019/CMakeFiles/ros_basics_2019_node.dir/all: ros_basics_2019/CMakeFiles/std_msgs_generate_messages_lisp.dir/all
+ros_basics_2019/CMakeFiles/ros_basics_2019_node.dir/all: ros_basics_2019/CMakeFiles/roscpp_generate_messages_cpp.dir/all
+ros_basics_2019/CMakeFiles/ros_basics_2019_node.dir/all: ros_basics_2019/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/all
+ros_basics_2019/CMakeFiles/ros_basics_2019_node.dir/all: ros_basics_2019/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/all
+ros_basics_2019/CMakeFiles/ros_basics_2019_node.dir/all: ros_basics_2019/CMakeFiles/std_msgs_generate_messages_cpp.dir/all
+ros_basics_2019/CMakeFiles/ros_basics_2019_node.dir/all: ros_basics_2019/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/all
+ros_basics_2019/CMakeFiles/ros_basics_2019_node.dir/all: ros_basics_2019/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/all
+ros_basics_2019/CMakeFiles/ros_basics_2019_node.dir/all: ros_basics_2019/CMakeFiles/std_msgs_generate_messages_eus.dir/all
+ros_basics_2019/CMakeFiles/ros_basics_2019_node.dir/all: ros_basics_2019/CMakeFiles/std_msgs_generate_messages_nodejs.dir/all
+ros_basics_2019/CMakeFiles/ros_basics_2019_node.dir/all: ros_basics_2019/CMakeFiles/roscpp_generate_messages_nodejs.dir/all
+ros_basics_2019/CMakeFiles/ros_basics_2019_node.dir/all: ros_basics_2019/CMakeFiles/std_msgs_generate_messages_py.dir/all
+	$(MAKE) -f ros_basics_2019/CMakeFiles/ros_basics_2019_node.dir/build.make ros_basics_2019/CMakeFiles/ros_basics_2019_node.dir/depend
+	$(MAKE) -f ros_basics_2019/CMakeFiles/ros_basics_2019_node.dir/build.make ros_basics_2019/CMakeFiles/ros_basics_2019_node.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/luca/ros_practicals_ws/build/CMakeFiles --progress-num=12,13 "Built target ros_basics_2019_node"
+.PHONY : ros_basics_2019/CMakeFiles/ros_basics_2019_node.dir/all
+
+# Include target in all.
+all: ros_basics_2019/CMakeFiles/ros_basics_2019_node.dir/all
+
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+ros_basics_2019/CMakeFiles/ros_basics_2019_node.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/luca/ros_practicals_ws/build/CMakeFiles 2
+	$(MAKE) -f CMakeFiles/Makefile2 ros_basics_2019/CMakeFiles/ros_basics_2019_node.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/luca/ros_practicals_ws/build/CMakeFiles 0
+.PHONY : ros_basics_2019/CMakeFiles/ros_basics_2019_node.dir/rule
+
+# Convenience name for target.
+ros_basics_2019_node: ros_basics_2019/CMakeFiles/ros_basics_2019_node.dir/rule
+
+.PHONY : ros_basics_2019_node
+
+# clean rule for target.
+ros_basics_2019/CMakeFiles/ros_basics_2019_node.dir/clean:
+	$(MAKE) -f ros_basics_2019/CMakeFiles/ros_basics_2019_node.dir/build.make ros_basics_2019/CMakeFiles/ros_basics_2019_node.dir/clean
+.PHONY : ros_basics_2019/CMakeFiles/ros_basics_2019_node.dir/clean
+
+# clean rule for target.
+clean: ros_basics_2019/CMakeFiles/ros_basics_2019_node.dir/clean
 
 .PHONY : clean
 

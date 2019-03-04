@@ -91,6 +91,17 @@ rebuild_cache/fast: rebuild_cache
 
 .PHONY : rebuild_cache/fast
 
+# Special rule for the target test
+test:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running tests..."
+	/usr/bin/ctest --force-new-ctest-process $(ARGS)
+.PHONY : test
+
+# Special rule for the target test
+test/fast: test
+
+.PHONY : test/fast
+
 # Special rule for the target list_install_components
 list_install_components:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Available install components are: \"Unspecified\""
@@ -124,17 +135,6 @@ install/fast: preinstall/fast
 	/usr/bin/cmake -P cmake_install.cmake
 .PHONY : install/fast
 
-# Special rule for the target test
-test:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running tests..."
-	/usr/bin/ctest --force-new-ctest-process $(ARGS)
-.PHONY : test
-
-# Special rule for the target test
-test/fast: test
-
-.PHONY : test/fast
-
 # The main all target
 all: cmake_check_build_system
 	cd /home/luca/ros_practicals_ws/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/luca/ros_practicals_ws/build/CMakeFiles /home/luca/ros_practicals_ws/build/ros_basics_2019/CMakeFiles/progress.marks
@@ -166,6 +166,21 @@ preinstall/fast:
 depend:
 	cd /home/luca/ros_practicals_ws/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
+
+# Convenience name for target.
+ros_basics_2019/CMakeFiles/ros_basics_2019_waypoint.dir/rule:
+	cd /home/luca/ros_practicals_ws/build && $(MAKE) -f CMakeFiles/Makefile2 ros_basics_2019/CMakeFiles/ros_basics_2019_waypoint.dir/rule
+.PHONY : ros_basics_2019/CMakeFiles/ros_basics_2019_waypoint.dir/rule
+
+# Convenience name for target.
+ros_basics_2019_waypoint: ros_basics_2019/CMakeFiles/ros_basics_2019_waypoint.dir/rule
+
+.PHONY : ros_basics_2019_waypoint
+
+# fast build rule for target.
+ros_basics_2019_waypoint/fast:
+	cd /home/luca/ros_practicals_ws/build && $(MAKE) -f ros_basics_2019/CMakeFiles/ros_basics_2019_waypoint.dir/build.make ros_basics_2019/CMakeFiles/ros_basics_2019_waypoint.dir/build
+.PHONY : ros_basics_2019_waypoint/fast
 
 # Convenience name for target.
 ros_basics_2019/CMakeFiles/roscpp_generate_messages_py.dir/rule:
@@ -392,6 +407,75 @@ std_msgs_generate_messages_py/fast:
 	cd /home/luca/ros_practicals_ws/build && $(MAKE) -f ros_basics_2019/CMakeFiles/std_msgs_generate_messages_py.dir/build.make ros_basics_2019/CMakeFiles/std_msgs_generate_messages_py.dir/build
 .PHONY : std_msgs_generate_messages_py/fast
 
+# Convenience name for target.
+ros_basics_2019/CMakeFiles/ros_basics_2019_node.dir/rule:
+	cd /home/luca/ros_practicals_ws/build && $(MAKE) -f CMakeFiles/Makefile2 ros_basics_2019/CMakeFiles/ros_basics_2019_node.dir/rule
+.PHONY : ros_basics_2019/CMakeFiles/ros_basics_2019_node.dir/rule
+
+# Convenience name for target.
+ros_basics_2019_node: ros_basics_2019/CMakeFiles/ros_basics_2019_node.dir/rule
+
+.PHONY : ros_basics_2019_node
+
+# fast build rule for target.
+ros_basics_2019_node/fast:
+	cd /home/luca/ros_practicals_ws/build && $(MAKE) -f ros_basics_2019/CMakeFiles/ros_basics_2019_node.dir/build.make ros_basics_2019/CMakeFiles/ros_basics_2019_node.dir/build
+.PHONY : ros_basics_2019_node/fast
+
+src/my_robot_control.o: src/my_robot_control.cpp.o
+
+.PHONY : src/my_robot_control.o
+
+# target to build an object file
+src/my_robot_control.cpp.o:
+	cd /home/luca/ros_practicals_ws/build && $(MAKE) -f ros_basics_2019/CMakeFiles/ros_basics_2019_node.dir/build.make ros_basics_2019/CMakeFiles/ros_basics_2019_node.dir/src/my_robot_control.cpp.o
+.PHONY : src/my_robot_control.cpp.o
+
+src/my_robot_control.i: src/my_robot_control.cpp.i
+
+.PHONY : src/my_robot_control.i
+
+# target to preprocess a source file
+src/my_robot_control.cpp.i:
+	cd /home/luca/ros_practicals_ws/build && $(MAKE) -f ros_basics_2019/CMakeFiles/ros_basics_2019_node.dir/build.make ros_basics_2019/CMakeFiles/ros_basics_2019_node.dir/src/my_robot_control.cpp.i
+.PHONY : src/my_robot_control.cpp.i
+
+src/my_robot_control.s: src/my_robot_control.cpp.s
+
+.PHONY : src/my_robot_control.s
+
+# target to generate assembly for a file
+src/my_robot_control.cpp.s:
+	cd /home/luca/ros_practicals_ws/build && $(MAKE) -f ros_basics_2019/CMakeFiles/ros_basics_2019_node.dir/build.make ros_basics_2019/CMakeFiles/ros_basics_2019_node.dir/src/my_robot_control.cpp.s
+.PHONY : src/my_robot_control.cpp.s
+
+src/waypoint_creation.o: src/waypoint_creation.cpp.o
+
+.PHONY : src/waypoint_creation.o
+
+# target to build an object file
+src/waypoint_creation.cpp.o:
+	cd /home/luca/ros_practicals_ws/build && $(MAKE) -f ros_basics_2019/CMakeFiles/ros_basics_2019_waypoint.dir/build.make ros_basics_2019/CMakeFiles/ros_basics_2019_waypoint.dir/src/waypoint_creation.cpp.o
+.PHONY : src/waypoint_creation.cpp.o
+
+src/waypoint_creation.i: src/waypoint_creation.cpp.i
+
+.PHONY : src/waypoint_creation.i
+
+# target to preprocess a source file
+src/waypoint_creation.cpp.i:
+	cd /home/luca/ros_practicals_ws/build && $(MAKE) -f ros_basics_2019/CMakeFiles/ros_basics_2019_waypoint.dir/build.make ros_basics_2019/CMakeFiles/ros_basics_2019_waypoint.dir/src/waypoint_creation.cpp.i
+.PHONY : src/waypoint_creation.cpp.i
+
+src/waypoint_creation.s: src/waypoint_creation.cpp.s
+
+.PHONY : src/waypoint_creation.s
+
+# target to generate assembly for a file
+src/waypoint_creation.cpp.s:
+	cd /home/luca/ros_practicals_ws/build && $(MAKE) -f ros_basics_2019/CMakeFiles/ros_basics_2019_waypoint.dir/build.make ros_basics_2019/CMakeFiles/ros_basics_2019_waypoint.dir/src/waypoint_creation.cpp.s
+.PHONY : src/waypoint_creation.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -401,6 +485,8 @@ help:
 	@echo "... install/strip"
 	@echo "... install/local"
 	@echo "... rebuild_cache"
+	@echo "... test"
+	@echo "... ros_basics_2019_waypoint"
 	@echo "... list_install_components"
 	@echo "... roscpp_generate_messages_py"
 	@echo "... roscpp_generate_messages_eus"
@@ -419,7 +505,13 @@ help:
 	@echo "... std_msgs_generate_messages_nodejs"
 	@echo "... roscpp_generate_messages_nodejs"
 	@echo "... std_msgs_generate_messages_py"
-	@echo "... test"
+	@echo "... ros_basics_2019_node"
+	@echo "... src/my_robot_control.o"
+	@echo "... src/my_robot_control.i"
+	@echo "... src/my_robot_control.s"
+	@echo "... src/waypoint_creation.o"
+	@echo "... src/waypoint_creation.i"
+	@echo "... src/waypoint_creation.s"
 .PHONY : help
 
 

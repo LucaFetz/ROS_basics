@@ -98,9 +98,10 @@
      </inertial>
   </link>
 
-  <joint name="base_to_sphere" type="fixed">
+  <joint name="base_to_sphere" type="continuous">
     <parent link="base_link"/>
     <child link="sphere"/>
+<axis xyz= "1 0 0"/>
     <origin xyz="0 -0.22 -0.02"/>
   </joint>
 
@@ -144,7 +145,7 @@
             <rightJoint>base_to_right_leg</rightJoint>
             <wheelSeparation>0.6</wheelSeparation>
             <wheelDiameter>0.2</wheelDiameter>
-            <wheelTorque>ZZZ</wheelTorque>
+            <wheelTorque>20</wheelTorque>
 
             <commandTopic>cmd_vel</commandTopic>
             <odometryTopic>odom</odometryTopic>

@@ -42,7 +42,7 @@
       <geometry>
         <cylinder length="0.2" radius="0.1"/>
       </geometry>
-      <origin rpy="0 1.57075 0" xyz="0 0 -0.3"/>
+      <origin rpy="0 1.57075 0" xyz="0 0 0"/>
     </visual>
     <collision>
       <geometry>
@@ -58,14 +58,14 @@
     <axis xyz="1 0 0"/>
     <parent link="base_link"/>
     <child link="right_leg"/>
-    <origin xyz="0.2 0.22 0.30"/>
+    <origin xyz="0.2 0.22 0.00"/>
   </joint>
   <link name="left_leg">
     <visual>
       <geometry>
         <cylinder length="0.2" radius="0.1"/>
       </geometry>
-      <origin rpy="0 1.57075 0" xyz="0 0 -0.3"/>
+      <origin rpy="0 1.57075 0" xyz="0 0 0"/>
     </visual>
     <collision>
       <geometry>
@@ -78,10 +78,10 @@
     </inertial>
   </link>
   <joint name="base_to_left_leg" type="continuous">
-    <axis xyz="1 0 0"/>
     <parent link="base_link"/>
     <child link="left_leg"/>
-    <origin xyz="-0.2 0.22 0.30"/>
+    <axis xyz="1 0 0"/>
+    <origin xyz="-0.2 0.22 0.00"/>
   </joint>
   <link name="sphere">
     <visual>
@@ -99,9 +99,10 @@
       <inertia ixx="0.4" ixy="0.0" ixz="0.0" iyy="0.4" iyz="0.0" izz="0.2"/>
     </inertial>
   </link>
-  <joint name="base_to_sphere" type="fixed">
+  <joint name="base_to_sphere" type="continuous">
     <parent link="base_link"/>
     <child link="sphere"/>
+    <axis xyz="1 0 0"/>
     <origin xyz="0 -0.22 -0.02"/>
   </joint>
   <!-- Below you will find samples of gazebo plugins you may want to use. -->
@@ -142,7 +143,7 @@
       <rightJoint>base_to_right_leg</rightJoint>
       <wheelSeparation>0.6</wheelSeparation>
       <wheelDiameter>0.2</wheelDiameter>
-      <wheelTorque>ZZZ</wheelTorque>
+      <wheelTorque>20</wheelTorque>
       <commandTopic>cmd_vel</commandTopic>
       <odometryTopic>odom</odometryTopic>
       <odometryFrame>odom</odometryFrame>

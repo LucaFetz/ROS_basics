@@ -38,6 +38,8 @@
 /home/luca/ros_practicals_ws/build/ros_basics_2019/CMakeFiles/install/strip.dir
 /home/luca/ros_practicals_ws/build/ros_basics_2019/CMakeFiles/install/local.dir
 /home/luca/ros_practicals_ws/build/ros_basics_2019/CMakeFiles/rebuild_cache.dir
+/home/luca/ros_practicals_ws/build/ros_basics_2019/CMakeFiles/test.dir
+/home/luca/ros_practicals_ws/build/ros_basics_2019/CMakeFiles/ros_basics_2019_waypoint.dir
 /home/luca/ros_practicals_ws/build/ros_basics_2019/CMakeFiles/list_install_components.dir
 /home/luca/ros_practicals_ws/build/ros_basics_2019/CMakeFiles/roscpp_generate_messages_py.dir
 /home/luca/ros_practicals_ws/build/ros_basics_2019/CMakeFiles/roscpp_generate_messages_eus.dir
@@ -56,4 +58,4 @@
 /home/luca/ros_practicals_ws/build/ros_basics_2019/CMakeFiles/std_msgs_generate_messages_nodejs.dir
 /home/luca/ros_practicals_ws/build/ros_basics_2019/CMakeFiles/roscpp_generate_messages_nodejs.dir
 /home/luca/ros_practicals_ws/build/ros_basics_2019/CMakeFiles/std_msgs_generate_messages_py.dir
-/home/luca/ros_practicals_ws/build/ros_basics_2019/CMakeFiles/test.dir
+/home/luca/ros_practicals_ws/build/ros_basics_2019/CMakeFiles/ros_basics_2019_node.dir

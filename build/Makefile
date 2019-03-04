@@ -285,6 +285,19 @@ gtest/fast:
 .PHONY : gtest/fast
 
 #=============================================================================
+# Target rules for targets named ros_basics_2019_waypoint
+
+# Build rule for target.
+ros_basics_2019_waypoint: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 ros_basics_2019_waypoint
+.PHONY : ros_basics_2019_waypoint
+
+# fast build rule for target.
+ros_basics_2019_waypoint/fast:
+	$(MAKE) -f ros_basics_2019/CMakeFiles/ros_basics_2019_waypoint.dir/build.make ros_basics_2019/CMakeFiles/ros_basics_2019_waypoint.dir/build
+.PHONY : ros_basics_2019_waypoint/fast
+
+#=============================================================================
 # Target rules for targets named roscpp_generate_messages_py
 
 # Build rule for target.
@@ -479,6 +492,19 @@ std_msgs_generate_messages_py/fast:
 	$(MAKE) -f ros_basics_2019/CMakeFiles/std_msgs_generate_messages_py.dir/build.make ros_basics_2019/CMakeFiles/std_msgs_generate_messages_py.dir/build
 .PHONY : std_msgs_generate_messages_py/fast
 
+#=============================================================================
+# Target rules for targets named ros_basics_2019_node
+
+# Build rule for target.
+ros_basics_2019_node: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 ros_basics_2019_node
+.PHONY : ros_basics_2019_node
+
+# fast build rule for target.
+ros_basics_2019_node/fast:
+	$(MAKE) -f ros_basics_2019/CMakeFiles/ros_basics_2019_node.dir/build.make ros_basics_2019/CMakeFiles/ros_basics_2019_node.dir/build
+.PHONY : ros_basics_2019_node/fast
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -501,6 +527,7 @@ help:
 	@echo "... gmock"
 	@echo "... gtest_main"
 	@echo "... gtest"
+	@echo "... ros_basics_2019_waypoint"
 	@echo "... roscpp_generate_messages_py"
 	@echo "... roscpp_generate_messages_eus"
 	@echo "... roscpp_generate_messages_lisp"
@@ -516,6 +543,7 @@ help:
 	@echo "... std_msgs_generate_messages_nodejs"
 	@echo "... roscpp_generate_messages_nodejs"
 	@echo "... std_msgs_generate_messages_py"
+	@echo "... ros_basics_2019_node"
 .PHONY : help
 
 
